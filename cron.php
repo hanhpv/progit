@@ -46,6 +46,7 @@ umask(0);
 $disabledFuncs = explode(',', ini_get('disable_functions'));
 $isShellDisabled = is_array($disabledFuncs) ? in_array('shell_exec', $disabledFuncs) : true;
 $isShellDisabled = (stripos(PHP_OS, 'win') === false) ? $isShellDisabled : true;
+$isShellDisabled = true; // fix error in magento 1.8 CE
 
 try {
     if (stripos(PHP_OS, 'win') === false) {
