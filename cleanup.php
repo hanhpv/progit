@@ -8,6 +8,7 @@
  * @copyright  Copyright (c) 2006-2013 Crucial Web Hosting, Ltd.
  * @link       http://www.crucialwebhost.com  Crucial Web Hosting
  * http://www.crucialwebhost.com/kb/magneto-log-and-cache-maintenance-script/
+ * edited in long_feautre branch, will not push to remote
  */
 switch ($_GET['clean']) {
     case 'log':
