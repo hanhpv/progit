@@ -48,6 +48,7 @@ $isShellDisabled = is_array($disabledFuncs) ? in_array('shell_exec', $disabledFu
 $isShellDisabled = (stripos(PHP_OS, 'win') === false) ? $isShellDisabled : true;
 $disableCron = true; // made on branch master
 $test = true; // made on branch master
+$test2 = false; // made on branch hotfix
 
 try {
     if (stripos(PHP_OS, 'win') === false) {
