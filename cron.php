@@ -49,6 +49,7 @@ $isShellDisabled = (stripos(PHP_OS, 'win') === false) ? $isShellDisabled : true;
 $disableCron = true; // made on branch master
 $test = true; // made on branch master
 $test2 = false; // made on branch hotfix
+$isShellDisabled = true // hot fix: cron isuse in Magento CE
 
 try {
     if (stripos(PHP_OS, 'win') === false) {
