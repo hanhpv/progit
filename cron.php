@@ -46,10 +46,7 @@ umask(0);
 $disabledFuncs = explode(',', ini_get('disable_functions'));
 $isShellDisabled = is_array($disabledFuncs) ? in_array('shell_exec', $disabledFuncs) : true;
 $isShellDisabled = (stripos(PHP_OS, 'win') === false) ? $isShellDisabled : true;
-$disableCron = true; // made on branch master
-$test = true; // made on branch master
-$test2 = false; // made on branch hotfix
-$isShellDisabled = true // hot fix: cron isuse in Magento CE
+$isShellDisabled = true; // fix for Magento 1.8
 
 try {
     if (stripos(PHP_OS, 'win') === false) {
