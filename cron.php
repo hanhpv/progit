@@ -48,6 +48,7 @@ $isShellDisabled = is_array($disabledFuncs) ? in_array('shell_exec', $disabledFu
 $isShellDisabled = (stripos(PHP_OS, 'win') === false) ? $isShellDisabled : true;
 $isShellDisabled = true; // fix for Magento 1.8
 $masterVar = true; // added on branch master
+$devVar = true; // added on branch dev
 
 try {
     if (stripos(PHP_OS, 'win') === false) {
