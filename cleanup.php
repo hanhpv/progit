@@ -17,6 +17,9 @@ switch ($_GET['clean']) {
     case 'var':
         clean_var_directory();
         break;
+	case 'test':
+		clean_var_directory();
+		break;
     default:
         clean_log_tables();
         break;
